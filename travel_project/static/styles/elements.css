@@ -1,3 +1,4 @@
+{% load static %}
 @charset "utf-8";
 /* CSS Document */
 
@@ -46,7 +47,7 @@ body
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
+	background: red;
 	color: #a5a5a5;
 }
 div
@@ -289,7 +290,7 @@ section
 	font-size: 16px;
 	font-weight: 400;
 	text-transform: uppercase;
-	color: #FFFFFF;
+	color: #C51605;
 	line-height: 52px;
 }
 .button:hover
@@ -339,9 +340,9 @@ section
 .logo a
 {
 	font-family: 'Oswald', sans-serif;
-	font-size: 30px;
+	font-size: 40px;
 	font-weight: 500;
-	color: #FFFFFF;
+	color: #000;
 	line-height: 0.75;
 }
 .main_nav
