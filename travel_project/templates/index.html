@@ -32,9 +32,17 @@
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li><a href="index.html">Home</a></li>
 									<li class="active"><a href="{% static 'about.html' %}">Plan your trip</a></li>
-									<li><a href="#">Register</a></li>
-									<li><a href="news.html">Experiences</a></li>
+									{% if user.is_authenticated %}
+									<li style= "color:#004225; font-size: 22px; font-family: 'Oswald', sans-serif; font-weight: 400; white-space: nowrap;" >{{user.username}}</li>
+									<li><a href="#">Experiences</a></li>
 									<li><a href="contact.html">Contact</a></li>
+									<li><a href="credentials/logout">logout</a></li>
+									{% else %}
+									<li><a href="credentials/register">Register</a></li>
+									<li><a href="credentials/login">login</a></li>
+									<li><a href="contact.html">Contact</a></li>
+									<li><a href="#">Experiences</a></li>
+									{% endif %}
 								</ul>
 							</nav>
 							<div class="header_phone ml-auto"></div>

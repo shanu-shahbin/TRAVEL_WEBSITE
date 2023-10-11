@@ -21,7 +21,8 @@ from travel_project import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('travel_app.urls'))
+    path('', include('travel_app.urls')),
+    path('credentials/', include('credentials.urls'))
 ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
